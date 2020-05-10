@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laravel 6 - API test example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+<script type="text/javascript">
+  $.ajax({
+    type: "GET",
+    dataType: "json",
+    url: 'http://ec2-52-91-77-71.compute-1.amazonaws.com/api/topanimals',
+    success: function(data){
+      console.log(data);
+    }
+  });
+</script>
+   
+</body>
+</html>
